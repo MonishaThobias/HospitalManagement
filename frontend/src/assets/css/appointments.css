@@ -1,0 +1,47 @@
+.appointments-page {
+  padding: 20px;
+  color: #fff;
+}
+.left-panel {
+  width: 25%;
+}
+.right-panel {
+  flex: 1;
+  margin-left: 20px;
+}
+.appointments-page form{
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.add-btn {
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-btn:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,76 @@
+/* Navbar */
+.navbar{
+     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+     padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(8px);
+    box-shadow:  0 2px 10px rgba(0,0,0,0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.navbar-toggler{
+     max-width: 25%;
+     background: linear-gradient(to right, #2f026a, #8bbfea);
+     color: #fff!important;
+    border: none!important;
+    border-radius: 6px!important;
+    font-size: 16px!important;
+    font-weight: 600!important;
+    cursor: pointer!important;
+    box-shadow: 0 2px 8px rgba(47,2,106,0.10)!important;
+    transition: background 0.2s, transform 0.1s;
+}
+.navbar-toggler:hover {
+    background: linear-gradient(to right, #8bbfea, #2f026a);
+    transform: translateY(-2px) scale(1.03);
+}
+.leftLinks .navLink,
+.leftLinks a {
+  color: wheat;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+ transition: color 0.3s ease, background 0.3s ease;
+
+}
+.leftLinks .navLink:hover,
+.leftLinks a:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.navLink.active {
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  
+}
+.rightLinks{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.rightLinks .username{
+    font-size: 16px;
+    color: whitesmoke;
+  font-weight: 500;
+    display: inline-flex;       
+  align-items: center;        
+  gap: 6px;                    
+  white-space: nowrap;         
+}
+.rightLinks .logoutbtn{
+    background:linear-gradient(to right, #8e2de2, #4a00e0);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+.rightLinks  .logoutBtn:hover {
+  opacity: 0.85;
+}
+

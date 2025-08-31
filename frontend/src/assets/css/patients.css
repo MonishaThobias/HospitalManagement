@@ -1,0 +1,105 @@
+.patients-page {
+  padding: 20px;
+  color: #fff;
+}
+
+.add-btn,.pagination-btn {
+ background: linear-gradient(to right, #2f026a, #8bbfea);
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0;
+    
+    box-shadow: 0 2px 8px rgba(47,2,106,0.10);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.add-btn:hover, .pagination-btn:hover {
+background: linear-gradient(to right, #8bbfea, #2f026a);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.patients-table {
+  max-width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+.patients-table th,
+.patients-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.modals-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modals {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  color: white;
+}
+
+.modals input,
+.modals select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.modals-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.modals-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modals-actions button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.modals-actions button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+.patient-profile p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.patient-profile strong {
+  color: #444;
+}
+.patient-profile {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+}

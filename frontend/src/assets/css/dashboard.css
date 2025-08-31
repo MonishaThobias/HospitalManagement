@@ -1,0 +1,29 @@
+.dashboard-page {
+  max-width: 100%!important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
+  justify-content: center;
+}
+
+.dashboard-links a {
+  background-color: #1e2a38;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-links a:hover {
+  background-color: #2e3e50;
+}

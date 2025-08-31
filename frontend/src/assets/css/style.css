@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1f2b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 12s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+
+
+}
+/* Glass Effect Container */
+.glass-container {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  text-align: center;
+  margin: 50px auto;
+
+}
+
+/* Gradient Animation Keyframes */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.login-page,.signup-page{
+  
+    border: 2px solid #fff;
+    margin: 100px auto;
+    padding: 10px 24px;
+    max-width:30%;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15), 0 1.5px 6px rgba(47,2,106,0.12) inset;
+    color: #222;
+
+}
+.login-page h2,.signup-page h2{
+    text-align: center;
+}
+.form-control{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 16px;
+    background: rgba(255,255,255,0.8);
+    transition: border-color 0.2s;
+}
+.form-select{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 16px;
+    background: rgba(255,255,255,0.8);
+    transition: border-color 0.2s;
+}
+
+.form-control:focus,.form-select:focus {
+    border-color: #2f026a!important;
+    outline: none!important;
+}
+.btn{
+    background: linear-gradient(to right, #2f026a, #8bbfea);
+    color: #fff!important;
+    padding: 12px 28px!important;
+    border: none!important;
+    border-radius: 6px!important;
+    font-size: 16px!important;
+    font-weight: 600!important;
+    cursor: pointer!important;
+    margin: 20px auto!important;
+    width: 100%!important;
+    box-shadow: 0 2px 8px rgba(47,2,106,0.10)!important;
+    transition: background 0.2s, transform 0.1s!important;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #8bbfea, #2f026a);
+    transform: translateY(-2px) scale(1.03)!important;
+}
+.add-btn,.pagination-btn {
+ background: linear-gradient(to right, #2f026a, #8bbfea);
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0;
+    
+    box-shadow: 0 2px 8px rgba(47,2,106,0.10);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.add-btn:hover, .pagination-btn:hover {
+background: linear-gradient(to right, #8bbfea, #2f026a);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.sign-link{
+    color: wheat;
+    text-decoration: underline;
+}
+.sign-link:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.footer{
+    text-align: center;
+    padding: 20px 0;
+    color: wheat;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+}
+
+/* Mobile: stack vertically and put table below search */
+@media (max-width: 768px) {
+    .appointments-page form{
+        width: 100%;
+    }
+  .appointments-page {
+    flex-direction: column;
+  }
+  .doctors-page{
+    flex-direction: column;
+  }
+  .left-panel {
+    width: 100%; /* full width */
+  }
+  .right-panel {
+    width: 100%;
+    margin-top: 20px; /* spacing between search and table */
+  }
+}
