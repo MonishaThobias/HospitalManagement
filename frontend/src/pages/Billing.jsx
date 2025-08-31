@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import API from '../services/api';
-import html2pdf from 'html2pdf.js';
 import {FaEdit, FaTrash, FaDownload} from 'react-icons/fa';
 
 const Billing = () => {
