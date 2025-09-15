@@ -136,6 +136,9 @@ background: linear-gradient(to right, #8bbfea, #2f026a);
 
 /* Mobile: stack vertically and put table below search */
 @media (max-width: 768px) {
+  .login-page,.signup-page{
+    max-width: 90%;
+  }
     .appointments-page form{
         width: 100%;
     }

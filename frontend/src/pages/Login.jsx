@@ -33,13 +33,14 @@ console.log("Full login response:", res.data);
   return (
     <div className="login-page">
       <h2>Login</h2>
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} autoComplete="on">
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           className="form-control mt-5"
+          autoComplete="on"
         /><br />
         <input
           type="password"
@@ -47,6 +48,7 @@ console.log("Full login response:", res.data);
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="form-control"
+          autoComplete="on"
         /><br />
         <button type="submit" className="btn sample-btn">Login</button>
         </form>

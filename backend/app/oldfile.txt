@@ -1,0 +1,1 @@
+DATABASE_URL = "postgresql://MyHospital:myhospital12345@myhospital-db.cbuyqaoekusx.eu-north-1.rds.amazonaws.com:5432/hospitaldb"

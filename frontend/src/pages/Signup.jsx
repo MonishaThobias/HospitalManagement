@@ -29,13 +29,14 @@ const Signup = () => {
   return (
     <div className="signup-page">
       <h2>Sign Up</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} autoComplete="on">
         <select
   name="role"
   value={form.role}
   onChange={handleChange}
   required
   className="form-select mt-5 mb-5"
+  autoComplete="on"
 >
   <option value="user">User</option>
   <option value="patient">Patient</option>
@@ -49,6 +50,7 @@ const Signup = () => {
           onChange={handleChange}
           required
           className="form-control"
+          autoComplete="on"
         /><br />
         <input
           type="email"
@@ -58,6 +60,7 @@ const Signup = () => {
           onChange={handleChange}
           required
           className="form-control"
+          autoComplete="on"
         /><br />
         <input
           type="password"
@@ -67,6 +70,7 @@ const Signup = () => {
           onChange={handleChange}
           required
           className="form-control"
+          autoComplete="on"
         /><br />
         <button type="submit" className="btn">Sign Up</button>
       </form>
